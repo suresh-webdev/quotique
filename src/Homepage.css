@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;700;800&family=Merriweather+Sans:ital,wght@0,400;0,600;1,800&family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+.home-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-quote{
+    word-wrap: break-word;
+    font-family: 'Merriweather', serif;
+    max-width: 70%;
+    margin: 5% 0;
+    padding: 2.5% 5%;
+    text-align: left;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(61, 61, 61, 0.4);
+    border-radius: 12px;
+    border-radius: 1.5rem;
+    line-height: 2;
+}
+
+.author-name{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    margin-right: 1rem;
+    color: #FF6B00;
+    text-transform: capitalize;
+    font-family: "Merriweather Sans";
+    font-size:1.5rem;
+}
+
+div > hr{
+    text-align: right;
+    color: #FF6B00;
+    font-weight: 600;
+}
+
+.quote{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: "Merriweather";
+}
+
+.shuffle-btn {
+    cursor: pointer;
+    font-family: "Montserrat";
+    background-color: #050308;
+    border-radius: 2rem;
+    color: white;
+    vertical-align: middle;
+    padding: 1rem 3rem;
+    font-size: 1.2rem; 
+    border-radius: 1.25rem;
+    position: relative;
+    border: 20px;
+    background-clip: padding-box; 
+    border: solid border transparent; 
+    border-radius: 2rem;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; 
+        right: 0;
+        bottom: 0; 
+        left: 0;
+        z-index: -1;
+        margin: -0.8px; 
+        border-radius: inherit; 
+        background: 1px linear-gradient(to bottom right, 
+            #FFFFFF 5%,
+            #6700FF 15%, 
+            rgb(34, 42, 34) 55%,
+            #6700FF 125%,
+            #6700FF 175%
+        );
+    }
+}
+.shuffle-btn > img{
+    margin-right:1rem;
+    vertical-align: middle;
+}
+
+/* Newsletter section */
+
+.newsletter-section{
+    display:flex ;
+    flex-direction: column;
+    margin: 10% 5%;
+    text-align: center;
+    align-items: center;
+}
+
+.newsletter-section h1{
+    font-size:2rem;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.newsletter-section p{
+    color:#fbfbfb80;
+    padding: 1rem;
+    width: 80%; 
+    line-height: 1.5;
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.news-label{
+    display: inline-block;
+    margin: 5% 0;
+    border-radius: 1.5rem;
+    min-width: 50%;
+    border: none;
+    outline:none;
+}
+
+.news-label input{
+    position: relative;
+    text-indent: 1.5rem;
+    color: #ffffff;
+    min-width: 80%;
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline:none;
+    background-color: #373737;
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+.news-label button{
+    position: absolute;
+    transform: translate(-100%,2%);
+    padding:1.2rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    outline:none;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(to bottom right,#3555FF,#8313DB);
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Connect-section */
+
+.connect-section{
+    display: flex;
+    align-items: center;
+    margin: 0 10% 5% 10%;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding: 1.5rem;
+}
+
+.text-section p{
+    font-family: "Montserrat";
+    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1.5rem;
+    color:#fbfbfb80;
+}
+
+.chat-img{
+    width: 50%;
+    margin: 1.5rem;
+}
+
+.get-in-touch{
+    padding:1.2rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    outline:none;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(to bottom right,#8313DB,#3555FF);
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem;
+    vertical-align: middle;
+    margin: 1.5rem 0;
+}
+
+.chat-icon{
+    font-size:1.5rem;
+    vertical-align: middle;
+    padding: 0 0 0 1.5rem;
+}

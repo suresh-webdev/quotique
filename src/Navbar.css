@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;600;700;800&family=Borel&family=Merriweather:wght@400;700&family=Montserrat:wght@400;700;900&family=Roboto:wght@300&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+nav {
+    position: relative;
+    padding: 1rem 15%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.nav-background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 12.5%;
+    background:  rgba(147, 76, 253, 0.9);
+    filter: blur(100px);
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 1rem;
+    color:#fbfbfb80;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fbfbfb80;
+}
+
+.Logo {
+    font-family: 'Besley', serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
