@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;700;800&family=Merriweather+Sans:ital,wght@0,400;0,600;1,800&family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+
 .footer-container{
     display: flex;
     color:#fbfbfb80;
@@ -34,12 +35,14 @@ footer ul li a{
 
 .footer-background{
     position: absolute;
+    margin-top: 2rem;
+    padding-top:2rem;
     left: 50%;
     transform: translate(-50%,-100%);
     width: 80%;
     height: 20%;
-    background:  rgba(66, 82, 221, 0.9);
-    filter: blur(150px);
+    background:  rgba(66, 82, 221, .5);
+    filter: blur(50px);
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
     z-index: -1;

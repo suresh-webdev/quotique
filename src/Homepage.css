@@ -10,6 +10,7 @@
 .home-quote{
     word-wrap: break-word;
     font-family: 'Merriweather', serif;
+    width: 60%;
     max-width: 70%;
     margin: 5% 0;
     padding: 2.5% 5%;
@@ -38,6 +39,7 @@ div > hr{
     text-align: right;
     color: #FF6B00;
     font-weight: 600;
+    margin-right:5px ;
 }
 
 .quote{
@@ -80,9 +82,14 @@ div > hr{
         );
     }
 }
+
 .shuffle-btn > img{
     margin-right:1rem;
     vertical-align: middle;
+}
+
+.shuffle-btn:hover{
+    border: .5px solid rgba(255, 255, 255, 0.673);
 }
 
 /* Newsletter section */
@@ -188,6 +195,7 @@ div > hr{
 }
 
 .get-in-touch{
+    text-decoration: none;
     padding:1.2rem 2rem;
     border-radius: 2rem;
     border: none;
@@ -199,6 +207,7 @@ div > hr{
     font-size: 1rem;
     vertical-align: middle;
     margin: 1.5rem 0;
+    cursor: pointer;
 }
 
 .chat-icon{

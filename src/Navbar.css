@@ -32,6 +32,7 @@ nav ul {
 }
 
 nav li {
+    cursor: pointer;
     list-style: none;
     padding: 1rem;
     color:#fbfbfb80;
