@@ -12,6 +12,28 @@ function Quote({content, author}) {
     const handleHeartClick = () => {
         setIsHeartClicked(!isHeartClicked);
     };
+
+    const handleCopyClick = async () => {
+        try {
+            await navigator.clipboard.writeText(`"${content}" - ${author}`);
+            // Optionally, you can provide feedback to the user using React state
+            alert('Content copied to clipboard!');
+        } catch (err) {
+            console.error('Unable to copy to clipboard:', err);
+        }
+    };
+
+    const handleShareClick = async () => {
+        try {
+          await navigator.share({
+            title: 'Quote',
+            text: `"${content}" - ${author}`,
+          });
+        } catch (err) {
+          console.error('Unable to share:', err);
+        }
+      };
+
     return (
         <div className="quote-item">
                 <p className='quote-content'>"{content}"</p>
@@ -23,8 +45,18 @@ function Quote({content, author}) {
                             onClick={handleHeartClick}
                         />
                         </li>
-                        <li><TbShare3 className="quote-icons share"/></li>
-                        <li><MdOutlineContentCopy className="quote-icons copy"/></li>
+                        <li>
+                            <TbShare3 
+                                className="quote-icons share"
+                                onClick={handleShareClick}
+                            />
+                        </li>
+                        <li>
+                            <MdOutlineContentCopy 
+                                className="quote-icons copy" 
+                                onClick={handleCopyClick}
+                            />
+                        </li>
                     </ul>
                     <div className='quote-author'><hr />{author}</div>
                 </div>

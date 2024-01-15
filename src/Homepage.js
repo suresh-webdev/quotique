@@ -1,5 +1,6 @@
 import { useState,React,useEffect } from 'react';
 import { HiOutlineChatAlt } from "react-icons/hi";
+import { IoMdMailUnread } from "react-icons/io";
 import Navbar from './Navbar';
 import Footer from './Footer';
 import "./Homepage.css";
@@ -56,6 +57,7 @@ function Homepage(){
                         Submerge yourself in daily wisdom. Subscribe Now for a captivating infusion of thought-provoking quotes, unlocking the beauty of each day with profound insights that touch your soul.
                     </p>
                     <div className='news-label'>
+                        <IoMdMailUnread className="search-icon"/>
                         <input type='email' name="email" placeholder='Enter your email address' />
                         <button className="subscribe">Subscribe</button>
                     </div>

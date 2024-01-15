@@ -3,11 +3,11 @@
 
 
 .quote-container{
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    color: rgba(255, 255, 255, 0.801);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -33,7 +33,7 @@
     display: inline-flex;
     float: right;
     white-space: nowrap;
-    color: white;
+    color: rgba(255, 255, 255, 0.801);
     text-transform: capitalize;
     font-family: "Merriweather Sans";
     font-size:1.5rem;
@@ -45,7 +45,7 @@
     vertical-align: middle;
     transform: rotate(90deg);
     text-align: right;
-    color: white;
+    color:  rgba(255, 255, 255, 0.801);
     font-weight: 600;
     margin-right:2rem ;
 }
@@ -65,7 +65,7 @@
     vertical-align: middle;
     cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.458);
     padding-right: 1.5rem;
     font-size: 1.5rem;
 }
@@ -75,13 +75,20 @@
 }
 
 .share:hover{
-    color: skyblue;
+    color:white;
 }
 
 .copy:hover{
-    color:grey
+    color:white;
 }
 
 .heart-clicked{
     color: red;
+}
+
+
+@media (max-width: 1000px) {
+    .quote-container{
+        width: 100%;
+    }
 }

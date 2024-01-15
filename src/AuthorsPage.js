@@ -13,7 +13,7 @@ function AuthorsPage(){
     useEffect(() => {
         if (author !== null) {
         fetchData(author);
-    }
+        }
     }, [author]);  
 
 
@@ -49,7 +49,7 @@ function AuthorsPage(){
             <div className="author-container">
                 <div className="search-element">
                     <div className='search-label'>
-                        <GoSearch className="search-icon"/>
+                        <GoSearch className="search-icon"  onClick={handleSearch}/>
                         <input type='text' name="text" placeholder='Authors Name' ref={inputRef}/>
                         <button className="subscribe" onClick={handleSearch} >Search</button>
                     </div>

@@ -51,7 +51,7 @@ function TopicsPage(){
             <div className="topics-container">
                 <div className="search-element">
                     <div className='search-label'>
-                        <GoSearch className="search-icon"/>
+                        <GoSearch className="search-icon "  onClick={handleSearch}/>
                         <input type='email' name="email" placeholder='Topic Name' ref={inputRef} />
                         <button className="subscribe" onClick={handleSearch}>Search</button>
                     </div>
