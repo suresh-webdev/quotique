@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Quotique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quotique is a dark mode quote website that utilizes the FreeCodeCamp API for fetching quotes. You can find the API reference on [GitHub](https://github.com/lukePeavey/quotable).
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+### Front-end (React)
 
-### `npm start`
+1. Download or clone the `client` folder.
+2. Open a terminal and navigate to the `client` folder.
+3. Run `npm install` to install the front-end dependencies.
+4. Run `npm start` to start the development server.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Back-end (Node.js + MongoDB)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Download or clone the `server` folder.
+2. Set up the environment files based on the provided `.env.example` file.
+3. Make sure you have MongoDB Atlas connection details available.
+4. Run `server.js` to start the back-end server.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Front-end:** React
+- **Back-end:** Node.js
+- **Database:** MongoDB
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once you have both the front-end and back-end set up, you can access the Quotique website in your browser. The front-end will be served at `http://localhost:3000` by default.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions to Quotique are welcome! If you would like to contribute, please follow these steps:
 
-### `npm run eject`
+1. Fork the repository and create a new branch.
+2. Make your changes and commit them.
+3. Push your changes to your forked repository.
+4. Submit a pull request with a detailed description of your changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
