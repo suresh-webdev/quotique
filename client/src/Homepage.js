@@ -36,7 +36,7 @@ function Homepage(){
 
     const handleButtonClick = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/subscribe', { email });
+            const response = await axios.post('https://quotique.onrender.com/subscribe', { email });
             const data=response.data;
             
 
