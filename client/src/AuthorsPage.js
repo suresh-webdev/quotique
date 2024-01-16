@@ -101,7 +101,7 @@ function AuthorsPage(){
                             <p>william shakespeare</p>
                         </div>
                         <div className="author" onClick={() => handleClick('maya-angelou')}>
-                            <img src="./images/MAYA.png" alt="maya Angelou" className="author-img"/>
+                            <img src="./images/maya.png" alt="maya Angelou" className="author-img"/>
                             <p>Maya Angelou</p>
                         </div>
                         
