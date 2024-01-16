@@ -1,6 +1,6 @@
 # Quotique
 
-Quotique is a dark mode quote website that utilizes the FreeCodeCamp API for fetching quotes. You can find the API reference on [GitHub](https://github.com/lukePeavey/quotable).
+Quotique is a dark mode quote website that utilizes the quotable (FreeCodeCamp API) for fetching quotes. You can find the API reference on [GitHub](https://github.com/lukePeavey/quotable).
 
 ## Installation
 
