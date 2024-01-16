@@ -92,3 +92,12 @@
         width: 100%;
     }
 }
+
+@media (min-width: 375px) and (max-width: 430px) {
+    .quote-content{
+        font-size: 1rem;
+    }
+    .quote-author{
+        font-size: 1rem;
+    }
+}

@@ -159,13 +159,33 @@ div > hr{
 
 .search-icon {
     text-align: left;
-    color: #ffffff;
+    color: #ffffff54 !important;
     font-size: 1.5rem;
     vertical-align: middle;
     padding: 0 0 0 1.5rem;
     min-width: 25px;
-  }
+}
 
+.search-icon:hover{
+    color:white !important;
+}
+
+  @media (min-width: 375px) and (max-width: 430px) {
+    .quote{
+        font-size: 1rem;
+    }
+    .author-name{
+        font-size: 1rem;
+    }
+    .news-label > input{
+        font-size: 1rem;
+        text-indent: 1rem;
+    }
+    .news-label{
+        width: 300px !important;
+    }
+    
+  }
 
 @media (max-width: 1000px) {
     .news-label  button{
