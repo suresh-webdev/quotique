@@ -156,7 +156,7 @@ const job = schedule.scheduleJob('0 8 * * *', async () => {
     }
 });
 
-// console.log('Scheduled job started:', job.nextInvocation());
+console.log('Scheduled job started:', job.nextInvocation());
 
 
 // Serve static files from the 'build' directory inside the 'client' directory
