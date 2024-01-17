@@ -75,6 +75,7 @@ async function sendMail(toEmail,Content,Author){
                 accessToken: accessToken
             }
         })
+        console.log(`Transporter created successfully. Sending email...`);
 
         const mailOptions = {
             from: 'Quotique 📪 <asmiusdummy@gmail.com>',
@@ -132,7 +133,7 @@ app.post('/subscribe', async (req, res) => {
 });
 
 
-const job = schedule.scheduleJob('0 8 * * *', async () => {
+const job = schedule.scheduleJob('*/10 * * * *', async () => {
     try {
         // Retrieve all users from the database
         const users = await User.find({});
@@ -149,7 +150,7 @@ const job = schedule.scheduleJob('0 8 * * *', async () => {
         for (const email of emails) {
             // console.log(email);
             const result = await sendMail(email, content, author);
-            // console.log(`Email sent to ${email}:`, result);
+            console.log(`Email sent to ${email}:`, result);
         }
     } catch (error) {
         console.error('Error sending emails:', error);
