@@ -133,7 +133,7 @@ app.post('/subscribe', async (req, res) => {
 });
 
 
-const job = schedule.scheduleJob('30 10 * * *', async () => {
+const job = schedule.scheduleJob('30  9 * * *', async () => {
     try {
         // Retrieve all users from the database
         const users = await User.find({});
