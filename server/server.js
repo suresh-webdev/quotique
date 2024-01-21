@@ -133,7 +133,7 @@ app.post('/subscribe', async (req, res) => {
 });
 
 
-const job = schedule.scheduleJob('10 11 * * *', async () => {
+const job = schedule.scheduleJob('15 12 * * *', async () => {
     try {
         console.log('Scheduled job is running.');
         // Retrieve all users from the database
