@@ -7,6 +7,8 @@ const dotenv =require('dotenv');
 const nodemailer = require('nodemailer');
 const axios = require('axios');
 const schedule = require('node-schedule');
+const cron = require('node-cron');
+const moment = require('moment-timezone'); 
 
 
 
@@ -133,7 +135,34 @@ app.post('/subscribe', async (req, res) => {
 });
 
 
-const job = schedule.scheduleJob('15 12 * * *', async () => {
+// const job = schedule.scheduleJob('15 12 * * *', async () => {
+//     try {
+//         console.log('Scheduled job is running.');
+//         // Retrieve all users from the database
+//         const users = await User.find({});
+        
+//         // Fetch a random quote
+//         const quote = await fetchRandomQuote();
+//         const content = quote.content;
+//         const author = quote.author;
+
+//         // Extract emails from users
+//         const emails = users.map(user => user.email);
+
+//         // Loop through emails and send emails
+//         for (const email of emails) {
+//             // console.log(email);
+//             const result = await sendMail(email, content, author);
+//             console.log(`Email sent to ${email}:`, result);
+//         }
+//     } catch (error) {
+//         console.error('Error sending emails:', error);
+//     }
+// });
+
+// console.log('Scheduled job started:', job.nextInvocation());
+
+const job = cron.schedule('30 13 * * *', async () => {
     try {
         console.log('Scheduled job is running.');
         // Retrieve all users from the database
@@ -156,9 +185,13 @@ const job = schedule.scheduleJob('15 12 * * *', async () => {
     } catch (error) {
         console.error('Error sending emails:', error);
     }
+}, {
+    timezone: 'UTC', 
 });
 
-console.log('Scheduled job started:', job.nextInvocation());
+
+
+
 
 
 // Serve static files from the 'build' directory inside the 'client' directory
